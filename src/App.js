@@ -7,7 +7,7 @@ import AddData from './components/AddData';
 import AddData3 from './components/AddData3';
 
 const getProductData = () => {
-  return axios.get('/api/todos')
+  return axios.get(`https://mern-app-manhha.herokuapp.com/api/todos/`)
     .then(res => res.data)
 
 }

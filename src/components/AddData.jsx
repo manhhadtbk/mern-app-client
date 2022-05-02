@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios'
 
 const addDataAction = (text, isDone) => {
-   return axios.post(`/api/todo`, { text: text, isDone: isDone })
+   return axios.post(`https://mern-app-manhha.herokuapp.com/api/todo/`, { text: text, isDone: isDone })
       .then((resp) => { return resp.data })
 }
 
